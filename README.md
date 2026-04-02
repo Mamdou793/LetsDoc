@@ -16,3 +16,6 @@ LetsDoc is a cross‑platform Avalonia desktop application that loads documents 
 - Embeddings + vector search
 - Local LLM inference
 - `.app` packaging for macOS
+
+## Screenshot
+<img width="1200" height="825" alt="Screenshot 2026-04-02 at 2 25 38 PM" src="https://github.com/user-attachments/assets/222b7f96-e10a-499c-858b-a938cf76bc0f" />

@@ -1,0 +1,32 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:LetsDoc.UI.ViewModels"
+             x:DataType="vm:DocumentViewerViewModel"
+             x:Class="LetsDoc.UI.Views.DocumentViewer">
+
+    <Border Background="#d2d396"
+            BorderBrush="#858e68"
+            BorderThickness="1"
+            Padding="24"
+            CornerRadius="12"
+            BoxShadow="0 4 12 0 #0A000000"> 
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled"
+                      VerticalScrollBarVisibility="Auto">
+            
+            <StackPanel Spacing="16">
+                <TextBlock Text="{Binding SourceInfo}"
+                           FontSize="12"
+                           FontWeight="Bold"
+                           Foreground="#9E9E9E"
+                           IsVisible="{Binding HasSourceInfo}"/>
+
+                <SelectableTextBlock Text="{Binding Content}"
+                                     FontSize="15"
+                                     FontFamily="Inter, Segoe UI, Roboto, Helvetica"
+                                     TextWrapping="Wrap"
+                                     LineHeight="20"
+                                     Foreground="#2C3E50" /> 
+            </StackPanel>
+        </ScrollViewer>
+    </Border>
+</UserControl>

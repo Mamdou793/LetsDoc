@@ -1,0 +1,12 @@
+/Users/mamdouhalslabai/Desktop/LetsDoc/Core/bin/Debug/net8.0/LetsDoc.deps.json
+/Users/mamdouhalslabai/Desktop/LetsDoc/Core/bin/Debug/net8.0/LetsDoc.dll
+/Users/mamdouhalslabai/Desktop/LetsDoc/Core/bin/Debug/net8.0/LetsDoc.pdb
+/Users/mamdouhalslabai/Desktop/LetsDoc/Core/obj/Debug/net8.0/LetsDoc.csproj.AssemblyReference.cache
+/Users/mamdouhalslabai/Desktop/LetsDoc/Core/obj/Debug/net8.0/LetsDoc.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mamdouhalslabai/Desktop/LetsDoc/Core/obj/Debug/net8.0/LetsDoc.AssemblyInfoInputs.cache
+/Users/mamdouhalslabai/Desktop/LetsDoc/Core/obj/Debug/net8.0/LetsDoc.AssemblyInfo.cs
+/Users/mamdouhalslabai/Desktop/LetsDoc/Core/obj/Debug/net8.0/LetsDoc.csproj.CoreCompileInputs.cache
+/Users/mamdouhalslabai/Desktop/LetsDoc/Core/obj/Debug/net8.0/LetsDoc.dll
+/Users/mamdouhalslabai/Desktop/LetsDoc/Core/obj/Debug/net8.0/refint/LetsDoc.dll
+/Users/mamdouhalslabai/Desktop/LetsDoc/Core/obj/Debug/net8.0/LetsDoc.pdb
+/Users/mamdouhalslabai/Desktop/LetsDoc/Core/obj/Debug/net8.0/ref/LetsDoc.dll

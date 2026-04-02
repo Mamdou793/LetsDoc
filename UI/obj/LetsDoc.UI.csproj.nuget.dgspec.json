@@ -1,0 +1,182 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/mamdouhalslabai/Desktop/LetsDoc/UI/LetsDoc.UI.csproj": {}
+  },
+  "projects": {
+    "/Users/mamdouhalslabai/Desktop/LetsDoc/Core/LetsDoc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mamdouhalslabai/Desktop/LetsDoc/Core/LetsDoc.csproj",
+        "projectName": "LetsDoc",
+        "projectPath": "/Users/mamdouhalslabai/Desktop/LetsDoc/Core/LetsDoc.csproj",
+        "packagesPath": "/Users/mamdouhalslabai/.nuget/packages/",
+        "outputPath": "/Users/mamdouhalslabai/Desktop/LetsDoc/Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mamdouhalslabai/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.ML.OnnxRuntime": {
+              "target": "Package",
+              "version": "[1.17.1, )"
+            },
+            "PdfPig": {
+              "target": "Package",
+              "version": "[0.1.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.419/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "osx-arm64": {
+          "#import": []
+        }
+      }
+    },
+    "/Users/mamdouhalslabai/Desktop/LetsDoc/UI/LetsDoc.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mamdouhalslabai/Desktop/LetsDoc/UI/LetsDoc.UI.csproj",
+        "projectName": "LetsDoc.UI",
+        "projectPath": "/Users/mamdouhalslabai/Desktop/LetsDoc/UI/LetsDoc.UI.csproj",
+        "packagesPath": "/Users/mamdouhalslabai/.nuget/packages/",
+        "outputPath": "/Users/mamdouhalslabai/Desktop/LetsDoc/UI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mamdouhalslabai/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/mamdouhalslabai/Desktop/LetsDoc/Core/LetsDoc.csproj": {
+                "projectPath": "/Users/mamdouhalslabai/Desktop/LetsDoc/Core/LetsDoc.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Avalonia": {
+              "target": "Package",
+              "version": "[11.0.10, )"
+            },
+            "Avalonia.Desktop": {
+              "target": "Package",
+              "version": "[11.0.10, )"
+            },
+            "Avalonia.Fonts.Inter": {
+              "target": "Package",
+              "version": "[11.0.10, )"
+            },
+            "Avalonia.ReactiveUI": {
+              "target": "Package",
+              "version": "[11.0.10, )"
+            },
+            "Avalonia.Themes.Fluent": {
+              "target": "Package",
+              "version": "[11.0.10, )"
+            },
+            "Material.Avalonia": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Material.Icons.Avalonia": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.419/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "osx-arm64": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

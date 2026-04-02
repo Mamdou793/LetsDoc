@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "Az3Og79wA8Q=",
+  "success": true,
+  "projectFilePath": "/Users/mamdouhalslabai/Desktop/LetsDoc/Core/LetsDoc.csproj",
+  "expectedPackageFiles": [
+    "/Users/mamdouhalslabai/.nuget/packages/microsoft.data.sqlite/8.0.0/microsoft.data.sqlite.8.0.0.nupkg.sha512",
+    "/Users/mamdouhalslabai/.nuget/packages/microsoft.data.sqlite.core/8.0.0/microsoft.data.sqlite.core.8.0.0.nupkg.sha512",
+    "/Users/mamdouhalslabai/.nuget/packages/microsoft.ml.onnxruntime/1.17.1/microsoft.ml.onnxruntime.1.17.1.nupkg.sha512",
+    "/Users/mamdouhalslabai/.nuget/packages/microsoft.ml.onnxruntime.managed/1.17.1/microsoft.ml.onnxruntime.managed.1.17.1.nupkg.sha512",
+    "/Users/mamdouhalslabai/.nuget/packages/pdfpig/0.1.9/pdfpig.0.1.9.nupkg.sha512",
+    "/Users/mamdouhalslabai/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.6/sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
+    "/Users/mamdouhalslabai/.nuget/packages/sqlitepclraw.core/2.1.6/sqlitepclraw.core.2.1.6.nupkg.sha512",
+    "/Users/mamdouhalslabai/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.6/sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
+    "/Users/mamdouhalslabai/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.6/sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512",
+    "/Users/mamdouhalslabai/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512"
+  ],
+  "logs": []
+}

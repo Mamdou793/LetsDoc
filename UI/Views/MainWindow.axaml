@@ -1,0 +1,45 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:views="clr-namespace:LetsDoc.UI.Views"
+        xmlns:vm="using:LetsDoc.UI.ViewModels"
+        x:DataType="vm:MainWindowViewModel"
+        x:Class="LetsDoc.UI.Views.MainWindow"
+        Width="1200" Height="800"
+        WindowStartupLocation="CenterScreen"
+        Background="#504640"
+        Title="LetsDoc - Local AI Document Assistant">
+
+    <DockPanel>
+        <Border Background="#8e6c6c"
+                DockPanel.Dock="Top"
+                Padding="16"
+                BorderBrush="#482121"
+                BorderThickness="0,0,0,1">
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <PathIcon Data="M3,3 L21,3 L21,21 L3,21 Z" /> <TextBlock Text="LetsDoc" FontSize="18" FontWeight="SemiBold" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+
+        <Grid ColumnDefinitions="300, *, 400">
+            
+            <Border Grid.Column="0" 
+                    Background="#d78e8e" 
+                    BorderBrush="#987979" 
+                    BorderThickness="0,0,1,0">
+                <views:DocumentListView DataContext="{Binding DocumentList}"/>
+            </Border>
+
+            <Border Grid.Column="1" Background="Transparent" Padding="20">
+                <views:DocumentViewer DataContext="{Binding Viewer}"/>
+            </Border>
+
+            <Border Grid.Column="2" 
+                    Background="#be8a8a" 
+                    BorderBrush="#997f7f" 
+                    BorderThickness="1,0,0,0"
+                    Padding="16">
+                <views:QueryPanel DataContext="{Binding QueryPanel}"/>
+            </Border>
+        </Grid>
+    </DockPanel>
+</Window>

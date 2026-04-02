@@ -1,0 +1,75 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:LetsDoc.UI.ViewModels"
+             x:DataType="vm:QueryPanelViewModel"
+             x:Class="LetsDoc.UI.Views.QueryPanel">
+
+    <Grid RowDefinitions="*, Auto">
+        <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="0,0,12,0">
+                
+                <Border Classes="AiCard" IsVisible="{Binding !!GeneratedAnswer.Length}">
+                    <StackPanel Spacing="8">
+                        <TextBlock Text="AI Answer" FontSize="12" FontWeight="Bold" Foreground="#166534"/>
+                        <TextBlock Text="{Binding GeneratedAnswer}"
+                                   TextWrapping="Wrap"
+                                   FontSize="14"
+                                   LineHeight="20"
+                                   Foreground="#065F46"/>
+                    </StackPanel>
+                </Border>
+
+                <TextBlock Text="Supporting Context" 
+                           FontSize="12" 
+                           FontWeight="Bold" 
+                           Foreground="#9E9E9E" 
+                           Margin="0,0,0,8"
+                           IsVisible="{Binding !!Results.Count}"/>
+                
+                <ItemsControl ItemsSource="{Binding Results}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Classes="Card">
+                                <TextBlock Text="{Binding Text}"
+                                        TextWrapping="Wrap"
+                                        FontSize="13"
+                                        Foreground="#374151"/>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </ScrollViewer>
+
+        <Border Grid.Row="1" 
+                Classes="Card"
+                Padding="8"
+                Margin="0,12,0,0"
+                CornerRadius="12">
+            <Grid ColumnDefinitions="*, Auto, Auto">
+                <TextBox Grid.Column="0"
+                        Text="{Binding Question, Mode=TwoWay}"
+                        Watermark="Ask a question about your docs..."
+                        BorderThickness="0"
+                        Background="Transparent"
+                        VerticalAlignment="Center"
+                        FontSize="14">
+                    <TextBox.KeyBindings>
+                        <KeyBinding Command="{Binding AskCommand}" Gesture="Enter"/>
+                    </TextBox.KeyBindings>
+                </TextBox>
+                
+                <Button Grid.Column="1"
+                        Content="Load"
+                        Command="{Binding LoadDocumentCommand}"
+                        Margin="8,0,8,0"
+                        Classes="Secondary"/>
+
+                <Button Grid.Column="2"
+                        Content="Ask"
+                        Command="{Binding AskCommand}"
+                        Classes="Primary"/>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>
